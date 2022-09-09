@@ -4,9 +4,101 @@
         <title></title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="css/style.css" rel="stylesheet">
+        <link href="css/main.css" rel="stylesheet">
+        <style type="text/css">
+            #photo {
+                width: 500px;
+                height: 300px;
+                margin: 0 auto;
+                text-align: left;
+                overflow: hidden;
+                position: relative;
+            }
+            
+            #photo img {
+                top: 0;
+                left: 0;
+                position: absolute;
+            }
+            </style>
+            
+            
+            <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+            <script type="text/javascript">
+            $(function(){
+                var setImg = '#photo';
+                var fadeSpeed = 1600;
+                var switchDelay = 5000;
+            
+                $(setImg).children('img').css({opacity:'0'});
+                $(setImg + ' img:first').stop().animate({opacity:'1',zIndex:'20'},fadeSpeed);
+            
+                setInterval(function(){
+                    $(setImg + ' :first-child').animate({opacity:'0'},fadeSpeed).next('img').animate({opacity:'1'},fadeSpeed).end().appendTo(setImg);
+                },switchDelay);
+            });
+            </script>
     </head>
     <body>
-    
+        <header id="header_container"><img src="./images/meluna-logo.png" alt="me luna logo"></header>
+        <nav class="nav_bar">
+            <ul class="nav_menu">
+                <li>Products</li>
+                <li>Size finder</li>
+                <li>How to use it</li>
+                <li>FAQS</li>
+                <li>Contact</li>
+            </ul>
+        </nav>
+        <div class="main_container">
+        <h1>Good Bye, Tanpons!</h1>
+        <p class="copy">Savings for you and the planet</p>
+        <button class="shop_btn">Shop cups</button>
+        <div id="photo">
+            <img src="./images/female-holding-menstrual-cup-732-549-feature-thumb-732x549.jpeg" alt="holding a menstrual cup">
+            <img src="./images/meluna08.webp" alt="8types of cups">
+        </div>
+
+        <section class="products">
+            <h2 class="menu">Products</h2>
+            <div class="items">
+            <img src="./images/meluna_short.webp" alt="menstrual cup shorty">
+            <p class="type">Me luna cup shorty</p>
+            <img src="./images/meluna_rainbow.jpeg" alt="menstrual cups rainbow colors">
+            <p class="type">Me luna cup regular fit</p>
+            <img src="./images/meluna_acc.jpeg" alt="menstrual accessories">
+            <p class="type">Accessories</p>
+            </div>
+        </section>
+
+        <article class="feature">
+            <h2 class="menu">Why Me luna cup?</h2>
+        </article>
+
+        <section class="size_finder">
+            <h3 class="sizes">Size finder</h3>
+            <img src="./images/deon-black-wYEJrnX91Qc-unsplash.jpg" alt="fruits">
+        </section>
+
+        <section class="howTo">
+            <h2 class="menu">How does this even work?</h2>
+            <p class="howTo">We hear you.Get hands on with the Me luna cup.</p>
+        </section>
+
+        <article class="Qnas">
+            <h3 class="answers">You have questions,We have answers!</h3>
+            <button class="answer_btn">See all FAQs</button>
+        </article>
+
+        <section class="contact_form">
+            <h3 class="contact">Stay in touch</h3>
+
+            
+        </section>
+
+        <footer>
+
+        </footer>
+        </div>
     </body>
 </html>

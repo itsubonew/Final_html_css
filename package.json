@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "sass":"sass sass/main.scss css/main.css",
+    "sass":"sass sass/main.scss css/main.css -w",
     "dev":"serve ."
   },
   "keywords": [],
