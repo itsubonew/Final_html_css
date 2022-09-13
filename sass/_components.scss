@@ -1,0 +1,15 @@
+@use 'base' as *;
+
+h2{
+    font-family: $font-lime;
+    font-size: $font-la;
+    @include flexLayout;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+p{
+    font-weight: bold;
+    font-size: $font-md;
+    font-family: $font-over;
+}

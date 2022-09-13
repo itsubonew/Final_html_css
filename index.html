@@ -1,27 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title></title>
+        <title>Me luna</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="css/main.css" rel="stylesheet">
-        <style type="text/css">
-            #photo {
-                width: 500px;
-                height: 300px;
-                margin: 0 auto;
-                text-align: left;
-                overflow: hidden;
-                position: relative;
-            }
-            
-            #photo img {
-                top: 0;
-                left: 0;
-                position: absolute;
-            }
-            </style>
-            
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Limelight&family=Nixie+One&family=Overpass:wght@300&family=Shrikhand&display=swap" rel="stylesheet">
+        <link rel="stylesheet" media="screen and (max-width: 768px)" href="css/mobile.css"> 
             
             <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
             <script type="text/javascript">
@@ -39,50 +26,78 @@
             });
             </script>
     </head>
+
     <body>
-        <header id="header_container"><img src="./images/meluna-logo.png" alt="me luna logo"></header>
+        <header id="header_container">
+        <div class="header_wrapper">
+        <img src="./images/meluna-logo.png" alt="me luna logo">
         <nav class="nav_bar">
-            <ul class="nav_menu">
-                <li>Products</li>
-                <li>Size finder</li>
-                <li>How to use it</li>
-                <li>FAQS</li>
-                <li>Contact</li>
+        <ul class="nav_menu">
+                <li><a href="#"> Products</a></li>
+                <li><a href="#"> Size finder</a></li>
+                <li><a href="#"> How to use it</a></li>
+                <li><a href="#"> FAQ</a></li>
+                <li><a href="#"> Contact</a></li>
             </ul>
         </nav>
-        <div class="main_container">
-        <h1>Good Bye, Tanpons!</h1>
+        </div>
+    </header>
+
+        <main class="main_container">
+        <div class="top">
+        <div class="main_text">
+        <h1>Good Bye,<br>Tampons!</h1>
         <p class="copy">Savings for you and the planet</p>
         <button class="shop_btn">Shop cups</button>
+        </div>
         <div id="photo">
             <img src="./images/female-holding-menstrual-cup-732-549-feature-thumb-732x549.jpeg" alt="holding a menstrual cup">
             <img src="./images/meluna08.webp" alt="8types of cups">
+        </div>
         </div>
 
         <section class="products">
             <h2 class="menu">Products</h2>
             <div class="items">
+            <div class="products_wrap">   
             <img src="./images/meluna_short.webp" alt="menstrual cup shorty">
-            <p class="type">Me luna cup shorty</p>
-            <img src="./images/meluna_rainbow.jpeg" alt="menstrual cups rainbow colors">
-            <p class="type">Me luna cup regular fit</p>
-            <img src="./images/meluna_acc.jpeg" alt="menstrual accessories">
-            <p class="type">Accessories</p>
+            <p class="type">Me luna cup shorty</p></div> 
+            <div class="products_wrap"> 
+            <img src="./images/meluna_standard.webp" alt="me luna standard cups">
+            <p class="type">Me luna cup regular fit</p></div>
+            <div class="products_wrap"> 
+            <img src="./images/meluna_accs.jpeg" alt="menstrual cups rainbow colors">
+            <p class="type">Accessories</p></div>
             </div>
         </section>
 
         <article class="feature">
+            <div class="feature_wrapper">
             <h2 class="menu">Why Me luna cup?</h2>
+            <p>Welcome to the comfortable, sustainable, leakproof life.</p></div>
+            <div class="icon_wrapper">
+            <div class="icons">
+            <svg xmlns="http://www.w3.org/2000/svg" width="82" height="82" viewBox="0 0 50 50"><path d="M25 1C11.767 1 1 11.767 1 25s10.767 24 24 24 24-10.767 24-24S38.233 1 25 1zm0 46C12.869 47 3 37.131 3 25S12.869 3 25 3s22 9.869 22 22-9.869 22-22 22z"/><path d="M26 23.277V7h-2v16.277c-.595.346-1 .984-1 1.723 0 .178.031.347.074.512l-8.781 8.781 1.414 1.414 8.781-8.781c.165.043.334.074.512.074a1.994 1.994 0 1 0 1-3.723z"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="82" height="82" viewBox="0 0 512 512"><path d="M350.29 80.15h10.54v10.33a7 7 0 1 0 14 0V80.15h10.33a7 7 0 0 0 0-14h-10.33V55.62a7 7 0 0 0-14 0v10.53h-10.54a7 7 0 0 0 0 14zM229 232.09l27.63 21.78a14.92 14.92 0 0 0 18.54 0l27.63-21.78a32.59 32.59 0 0 0 12.5-25.75v-4.67a30.9 30.9 0 0 0-49.4-24.73 30.89 30.89 0 0 0-49.39 24.73v4.67A32.58 32.58 0 0 0 229 232.09zm1.51-30.42a16.88 16.88 0 0 1 30-10.66 7 7 0 0 0 10.85 0 16.88 16.88 0 0 1 30 10.66v4.67a18.7 18.7 0 0 1-7.16 14.76l-27.63 21.78a1 1 0 0 1-1.21 0l-27.74-21.78a18.7 18.7 0 0 1-7.16-14.76zm156.7 190.4a39.34 39.34 0 1 0-70-24.68 39 39 0 0 0 9 25 54.12 54.12 0 0 0-28.31 27.7 54.13 54.13 0 0 0-11.57-6.39 39.33 39.33 0 0 0-27.79-63.92 39 39 0 0 0-29.66 10.46 39.46 39.46 0 0 0-12.52 28.78 39 39 0 0 0 9 25 53.12 53.12 0 0 0-11.09 6.33 54 54 0 0 0-29.33-28.34 39.34 39.34 0 0 0-27.79-63.92 39 39 0 0 0-29.66 10.46A39.47 39.47 0 0 0 115 367.39a39 39 0 0 0 9 25 54.24 54.24 0 0 0-33.1 50V465a17 17 0 0 0 17 17h84.42v4.66a17 17 0 0 0 17 17h93.98a17 17 0 0 0 17-17V482h83.87a17 17 0 0 0 17-17v-22.56a54.06 54.06 0 0 0-33.96-50.37zm-195 72V468h-84.38a3 3 0 0 1-3-3v-22.56a40.27 40.27 0 0 1 27.58-38.27 11.13 11.13 0 0 0 4.24-18.59 25.34 25.34 0 0 1 17.63-43.53c.61 0 1.24 0 1.86.07a25.34 25.34 0 0 1 23.46 23.78v1.43a25.39 25.39 0 0 1-7.58 18.13 10.94 10.94 0 0 0-3 10.44 11.11 11.11 0 0 0 7.55 8.06 40.1 40.1 0 0 1 26.68 27.26 54.19 54.19 0 0 0-11 32.88zm114.09 22.59a3 3 0 0 1-3 3h-94.05a3 3 0 0 1-3-3V464.1a40.3 40.3 0 0 1 27.58-38.27 11.13 11.13 0 0 0 4.24-18.59 25.34 25.34 0 0 1 17.63-43.53c.62 0 1.24 0 1.86.07a25.33 25.33 0 0 1 15.92 43.33 11 11 0 0 0-3 10.45 11.12 11.12 0 0 0 7.55 8.06 40.17 40.17 0 0 1 28.27 38.48zM407.16 465a3 3 0 0 1-3 3H320.3v-3.9a54.16 54.16 0 0 0-11.43-33.42 40.22 40.22 0 0 1 25.83-26.51 11.13 11.13 0 0 0 4.23-18.59 25.34 25.34 0 0 1 17.63-43.53c.62 0 1.25 0 1.87.07a25.33 25.33 0 0 1 23.45 23.77v1.44a25.39 25.39 0 0 1-7.58 18.13 10.92 10.92 0 0 0-3 10.44 11.11 11.11 0 0 0 7.55 8.06 40.14 40.14 0 0 1 28.25 38.48z"/><path d="M265.43 325.25h.32a117.88 117.88 0 0 0 7.86-235.5v-20a62 62 0 0 0 6.42.34c8.41 0 19.74-1.76 28.87-9.53 11-9.37 15.85-24.69 14.34-45.54a7 7 0 0 0-6.47-6.48c-20.85-1.51-36.17 3.33-45.54 14.35a36.7 36.7 0 0 0-4.13 6 36.7 36.7 0 0 0-4.13-6c-9.37-11-24.7-15.86-45.54-14.35a7 7 0 0 0-6.43 6.52c-1.5 20.85 3.32 36.17 14.35 45.54 9.13 7.77 20.46 9.53 28.86 9.53 2 0 3.85-.1 5.45-.25v19.77A117.52 117.52 0 0 0 226 96.36a118.79 118.79 0 0 0-44.23 28.31 117.88 117.88 0 0 0 83.71 200.58ZM281.89 32c5.48-6.44 14.75-9.69 27.62-9.69 0 12.84-3.23 22.1-9.63 27.58-7.48 6.4-18 6.58-24 6.06-.5-5.95-.32-16.51 6.01-23.95Zm-23.58 23.94c-6 .53-16.52.35-24-6-6.4-5.48-9.63-14.74-9.63-27.58 12.84 0 22.09 3.23 27.57 9.63 6.41 7.43 6.59 18.01 6.06 23.95Zm93.08 92.61a103.23 103.23 0 0 1 18.24 59.1 104.47 104.47 0 0 1-.61 10.94c-3-4.87-4.42-5.35-5.77-5.8-1.7-.57-11.14-4.86-19.57-9.07a3 3 0 0 1-.57-.36c-.18-1 1-3.91 1.52-5.17a24.88 24.88 0 0 0 1.47-4.36c.9-4.51-2.05-9.17-5.47-14.56-1.26-2-3.36-5.3-3.62-6.39-1.39-8.33-12.45-12-24.16-15.92-16.09-5.37-28.05-10.8-35.54-16.15l-.32-.24a37.39 37.39 0 0 1 5.21-4.7c3.92-3.13 7.63-6.09 7.62-10.54.14-2 3.37-9.9 7-17.1a104.09 104.09 0 0 1 54.57 40.32ZM191.7 134.49a103.45 103.45 0 0 1 69.23-30.9c1.55-.07 3.15-.11 4.77-.11h.3a103.73 103.73 0 0 1 18.86 1.78c-2.59 5.33-6.25 13.54-6.94 18.51-.74.73-2.2 1.9-3.23 2.72-4.55 3.64-10.22 8.17-10 14.63.07 2.51 1.11 6.19 5.68 9.46 8.58 6.13 21.25 11.94 38.72 17.76 4.67 1.56 14.27 4.76 16.2 7 .67 3.17 2.79 6.52 5.23 10.36a52.89 52.89 0 0 1 3.66 6.35c-.17.48-.43 1.12-.64 1.63-1.7 4.17-6.21 15.27 4.81 20.78 6.63 3.32 15.62 7.54 19.71 9.19a133.64 133.64 0 0 1 7.13 13.93 103 103 0 0 1-14.4 29.5 104.89 104.89 0 0 1-10.61 12.8 103.07 103.07 0 0 1-74.4 31.38h-.29a103.41 103.41 0 0 1-37.77-7.26 25.5 25.5 0 0 0 5.75-12.95 20 20 0 0 0-3.59-14.21l-.83-1-1.19-.6c-4.84-2.43-9.9-7.86-12.73-11.34 1.88-7.42 4.3-20.08.85-26.23a8.8 8.8 0 0 0-5.37-4.32 46.73 46.73 0 0 1-24.75-16.82c-.28-12.56-12.27-35.19-17.69-44.8.17-.46.32-.92.49-1.38a103.27 103.27 0 0 1 23.04-35.86Zm-28.15 54.08c6.17 12.32 10.9 24.38 10.29 28.84l-.28 2.05 1.05 1.79c.4.69 9.89 16.54 31.08 23.12.43 3.32-.81 11.77-2.9 19.17l-.78 2.77 1.67 2.35c.34.47 7.93 11 17.2 16.4a8.65 8.65 0 0 1 .68 4.57c-.35 2.9-2.13 6-5.2 9.09a103.65 103.65 0 0 1-54.5-91.64 105.58 105.58 0 0 1 1.69-18.51Z"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="82" height="82" viewBox="0 0 52 52"><path d="M19.461 9.259c-.407-.347-1.381-.831-1.728-1.231-1.893-2.186-.181-5.095 2.44-5.107 2.799-.013 5.28.788 8.153.553 2.155-.176 6.44-1.17 7.08 2.352L34.28 8.811c-1.4.219-2.8.418-4.206.596-3.445.4-6.81.5-10.25-.081-1.574-.266-2.25 2.143-.665 2.41 3.653.618 7.236.598 10.915.171 2.148-.25 5.447-.04 7.015-1.777 2.762-3.061.047-8.348-3.439-9.188-3.604-.868-7.591.298-11.31-.253-2.106-.311-4.47-.457-6.344.789-1.51 1.003-1.937 2.387-1.826 4.157.187 2.994 1.47 3.644 3.523 5.392 1.218 1.037 2.995-.723 1.767-1.768zM32.32 26.458c-.59-3.134-.958-5.927-4.52-6.534-2.985-.508-5.062.324-6.316 3.046-1.112 2.413-1.55 5.442.705 7.382 1.092.94 2.48 1.158 3.799 1.602 1.587.535 5.174 1.618 3.517 4.471-1.502 2.587-6.247.639-6.618-2.047-.219-1.586-2.628-.91-2.41.665.407 2.952 2.468 5.249 5.562 5.379 2.347.098 5.727-1.536 6.224-4.041.516-2.604-1.364-5.106-3.578-6.17-2.433-1.168-6.265-.451-5.343-5.256.272-1.419 1.815-3.135 3.405-2.618 2.12.69 2.811 2.922 3.162 4.786.296 1.579 2.706.91 2.41-.665z"/><path d="M27.431 19.792a5.14 5.14 0 0 1 .104-.839c.139-.66-.193-1.35-.873-1.537-.62-.17-1.398.209-1.537.873a9.44 9.44 0 0 0-.194 1.503c-.03.675.597 1.25 1.25 1.25.703 0 1.219-.573 1.25-1.25zM25.043 40.048c.175.568.198 1.094.044 1.67-.417 1.555 1.994 2.219 2.41.664a5.37 5.37 0 0 0-.044-2.999c-.473-1.532-2.887-.878-2.41.665z"/><path d="M17.795 10.792c-3.451 4.476-7.111 9.404-9.78 14.386-1.862 3.476-2.945 7.324-1.464 11.124 1.524 3.91 5.055 10.146 8.596 12.605 2.553 1.773 8.436 2.777 11.562 2.6 8.55-.487 15.406-5.649 18.075-13.822 1.23-3.77 2.218-8.264.204-11.875-3.05-5.468-6.707-10.683-10.037-15.988-.854-1.359-3.018-.106-2.159 1.262 3.995 6.363 11.888 14.754 10.431 22.563-.858 4.602-2.892 8.997-6.668 11.898-2.306 1.772-7.467 3.477-10.607 3.493-2.565.013-7.638-1.076-9.7-2.545-2.918-2.077-7.976-10.378-8.009-13.925-.036-3.934 2.734-7.521 4.844-10.618 2.256-3.312 4.423-6.722 6.87-9.896.982-1.273-1.188-2.52-2.158-1.262z"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="82" height="82" viewBox="0 0 50 50"><path d="M45.281 25.915c4.949-5.004 4.949-13.146 0-18.15A12.556 12.556 0 0 0 36.292 4h-.001c-3.396 0-6.59 1.337-8.991 3.765L25 10.09l-2.3-2.325A12.56 12.56 0 0 0 13.709 4a12.56 12.56 0 0 0-8.99 3.765c-4.949 5.004-4.949 13.146 0 18.15L25 46.422l20.281-20.507zM6.141 9.171A10.575 10.575 0 0 1 13.709 6c2.858 0 5.547 1.126 7.569 3.171L25 12.935l3.722-3.764A10.576 10.576 0 0 1 36.291 6c2.858 0 5.546 1.126 7.568 3.171 4.183 4.229 4.183 11.109 0 15.338L25 43.578 6.141 24.509c-4.183-4.229-4.183-11.11 0-15.338z"/></svg>
+        </div>
+            <img src="./images/top_gf.webp" alt="woman squeezing a grapefruit">
+        </div>
         </article>
 
         <section class="size_finder">
-            <h3 class="sizes">Size finder</h3>
+            <div class="size_wrapper">
+            <h2 class="menu">Size finder</h2>
+            <p class="size_text">Every character is different.</p>
             <img src="./images/deon-black-wYEJrnX91Qc-unsplash.jpg" alt="fruits">
+        </div>
         </section>
 
         <section class="howTo">
             <h2 class="menu">How does this even work?</h2>
-            <p class="howTo">We hear you.Get hands on with the Me luna cup.</p>
+            <p class="howTo_text">We hear you.Get hands on with the Me luna cup.</p>
+            <iframe class="youtube" width="720" height="550" src="https://www.youtube.com/embed/I5KCYXDddzc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </section>
 
         <article class="Qnas">
@@ -93,12 +108,13 @@
         <section class="contact_form">
             <h3 class="contact">Stay in touch</h3>
 
-            
+
         </section>
 
         <footer>
 
         </footer>
         </div>
+        </main>
     </body>
 </html>

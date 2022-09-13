@@ -1,3 +1,211 @@
+* {
+  margin: 0;
+  padding: 0;
+}
 
+body {
+  background-color: #fff;
+}
+
+#header_container {
+  width: 100%;
+  height: 90px;
+  background-color: #fff;
+  height: 90px;
+  position: fixed;
+  border-bottom: 4px solid #ffd4e2;
+}
+
+img {
+  width: 180px;
+  height: 90px;
+}
+
+.header_wrapper {
+  display: flex;
+  align-items: center;
+}
+.header_wrapper .nav_bar {
+  display: inline-block;
+}
+.header_wrapper .nav_bar ul {
+  list-style: none;
+  display: flex;
+  text-align: center;
+  font-family: "Nixie One", cursive;
+  font-size: 18px;
+}
+.header_wrapper .nav_bar li {
+  padding-right: 32px;
+  padding-left: 32px;
+}
+.header_wrapper .nav_menu a {
+  color: #000;
+  text-decoration: none;
+}
+.header_wrapper .nav_menu a:hover {
+  color: #8A3398;
+}
+
+.top {
+  background-image: url(../images/visax-6oPXqoVl8vM-unsplash.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 640px;
+}
+.top h1 {
+  font-size: 60px;
+  font-family: "Shrikhand", cursive;
+  color: #fff;
+  display: inline;
+  text-align: left;
+  padding-left: 60px;
+}
+.top .copy {
+  color: #fff;
+  font-size: 28px;
+  font-family: "Overpass", sans-serif;
+  padding-bottom: 20px;
+}
+.top .shop_btn {
+  cursor: pointer;
+  background-color: #fff;
+  font-size: 20px;
+  font-family: "Nixie One", cursive;
+  border: none;
+  border-radius: 8px;
+  padding: 10px;
+  margin-left: 110px;
+  color: #8A3398;
+}
+.top .shop_btn:hover {
+  background-color: #ffd4e2;
+  color: #fff;
+}
+.top .main_text {
+  display: inline-block;
+  padding: 200px 0 0 150px;
+}
+.top #photo img {
+  display: flex;
+  width: 620px;
+  height: 450px;
+  border-radius: 5%;
+  position: absolute;
+  right: 172px;
+  top: 142px;
+}
+
+.products .items {
+  display: flex;
+  justify-content: space-evenly;
+}
+.products .items img {
+  width: 260px;
+  height: 280px;
+  border: 1px solid #ffd4e2;
+  margin-top: 60px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.products .products_wrap p {
+  text-align: center;
+  font-family: "Nixie One", cursive;
+  font-size: 20px;
+  padding-top: 25px;
+}
+.products .products_wrap p:hover {
+  color: #ffd4e2;
+  cursor: pointer;
+}
+
+.feature {
+  background-color: #FFE8D6;
+  margin-top: 70px;
+  background-size: contain;
+  height: 760px;
+}
+.feature h2 {
+  padding-bottom: 15px;
+  text-align: left;
+  margin-top: 80px;
+  color: #fff;
+}
+.feature p {
+  font-size: 24px;
+  font-family: "Overpass", sans-serif;
+  font-weight: bold;
+  color: #fff;
+  display: flex;
+  border: 1px solid black;
+}
+.feature img {
+  width: 800px;
+  height: 600px;
+  display: inline-block;
+  margin-left: 280px;
+}
+.feature .feature_wrapper {
+  display: flex;
+}
+.feature .icon_wrapper {
+  display: flex;
+}
+
+.size_finder h2 {
+  padding-bottom: 15px;
+}
+.size_finder .size_text {
+  font-size: 24px;
+  font-family: "Overpass", sans-serif;
+  font-weight: bolder;
+  text-align: center;
+  padding-bottom: 30px;
+}
+.size_finder img {
+  width: 95%;
+  height: 700px;
+}
+.howTo h2 {
+  padding-bottom: 20px;
+}
+.howTo .youtube {
+  margin: 30px 0 100px 400px;
+  text-align: center;
+}
+.howTo .howTo_text {
+  text-align: center;
+}
+
+.Qnas {
+  background-image: url(../images/nataliya-smirnova-6Rfsu18_iVg-unsplash.jpg);
+  background-size: cover;
+  height: 800px;
+}
+.Qnas h3 {
+  font-size: 40px;
+  font-family: "Abril Fatface", cursive;
+  color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 100px 0 10px 0;
+  border-bottom: 2px solid #ffd4e2;
+}
+
+h2 {
+  font-family: "Limelight", cursive;
+  font-size: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+p {
+  font-weight: bold;
+  font-size: 28px;
+  font-family: "Overpass", sans-serif;
+}
 
 /*# sourceMappingURL=main.css.map */
