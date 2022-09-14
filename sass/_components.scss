@@ -1,7 +1,7 @@
 @use 'base' as *;
 
 h2{
-    font-family: $font-lime;
+    font-family: $font-abril;
     font-size: $font-la;
     @include flexLayout;
     padding-top: 60px;

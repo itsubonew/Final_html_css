@@ -122,34 +122,54 @@ img{
 .feature{
     background-color: $color-primary;
     margin-top: 70px;
+    margin-left: 60px;
     background-size: contain;
-    height:760px;
- h2{
+    height:600px;
+    width: 100%;
+    position: relative;
+    z-index: -1;
+ .menu{
     padding-bottom: 15px;
-    text-align: left;
+    align-items: flex-start;
+    justify-content: left;
     margin-top: 80px;
     color: #fff;
  }   
+ h2{
+    padding-top: 100px;
+    padding-left: 20px;
+ }
  p{
-    font-size: 24px;
+    font-size: $font-md;
     font-family: $font-over;
     font-weight: bold;
     color: #fff;
+    padding-left: 15px;
+    padding-bottom: 20px;
+}
+img{
+    width: 640px;
+    height: 520px;
+    position: absolute;
+    right: 100px;
+    bottom: 32px;
+ }
+.icon_text{
+    font-size: $font-sm;
+    padding-top: 12px;
+    color: #D1B09D;
+}
+.icon_group{
     display: flex;
-    border: 1px solid black;
 }
- img{
-    width: 800px;
-    height: 600px;
-    display: inline-block;
-    margin-left: 280px;
-}
+
 .feature_wrapper{
-    display: flex;
+    display: block;
 }
     
     .icon_wrapper{
-        display: flex;
+        margin-left: 242px;
+        margin-top: 20px;
     }
 }
 
@@ -169,23 +189,25 @@ img{
         height: 700px;
         // position: relative;
     }
-    
-    .size_wrapper{
-        // position: absolute;
-
-    }
 }
 
 .howTo{
     h2{
-        padding-bottom: 20px;
+        padding-top: 100px;
+        padding-bottom: 0;
+        border-bottom: 3px solid #8A3398;
+        width: 600px;
+        margin:0 auto;
     }
     .youtube {
-        margin: 30px 0 100px 400px;
+        margin: 30px 0 100px 350px;
         text-align: center;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     }
     .howTo_text {
       text-align: center;
+      padding-bottom: 35px;
+      padding-top: 13px;
     }
 
 }
@@ -193,15 +215,66 @@ img{
 .Qnas{
     background-image: url(../images/nataliya-smirnova-6Rfsu18_iVg-unsplash.jpg);
     background-size: cover;
-    height: 800px;
+    height: 642px;
     h3{
-        font-size: $font-la;
+        font-size: 45px;
         font-family: 'Abril Fatface', cursive;
         color: #000;
         @include flexLayout;
-        padding: 100px 0 10px 0 ;
-        border-bottom: 2px solid #ffd4e2;
+        padding: 190px 20px 5px 20px ;
         // -webkit-text-stroke: 1px #fff;
+    }
+.qnas_wrapper{
+    border: 3px solid #ffd4e2;
+    background-color: #fff;
+    background-size: contain;
+    width: 450px;
+    height: 638px;
+}
+.answer_btn button{
+  text-align: center;
+}
+}
+.contact_form{
+    h3{
+        font-size: $font-la;
+        font-family: $font-lime;
+        text-align: center;
+        padding-top: 120px;
+    }
+    .contact_email{
+        text-align: left;
+        width: 480px;
+        height: 50px;
+        border-color: rgb(250, 249, 249);
+        border-radius: 20px;
+        margin-top: 40px;
+        margin-left: 50px;
+        margin-bottom: 60px;
+        font-size: $font-sm;
+        font-family:$font-abril;
+        padding-left:15px;
+    }
+    .contact_form2{
+        text-align: center;
+        
+                }
+}
+footer{
+    .footer_menu {
+        background-color: $color-primary;
+        width: 100%;
+        height: 70px;
+        display: flex;
+        justify-content: space-around;
+        list-style: none;
+        padding-top: 50px;
+    }
+    .fm {
+        text-align: center;
+        font-size: 24px;
+        font-family: $font-over;
+        color: #fff;
     }
 }
 
