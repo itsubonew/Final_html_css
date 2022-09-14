@@ -7,6 +7,7 @@
     height: 90px;
     position: fixed;
     border-bottom: 4px solid #ffd4e2;
+    z-index: 99;
 }
 img{
     width: 180px;
@@ -70,7 +71,7 @@ img{
     border-radius: 8px;
     padding: 10px;
     margin-left: 110px;
-    color: #8A3398;
+    color: #ffd4e2;
 
     &:hover{
         background-color: #ffd4e2;
@@ -124,7 +125,7 @@ img{
     margin-top: 70px;
     margin-left: 60px;
     background-size: contain;
-    height:600px;
+    height:690px;
     width: 100%;
     position: relative;
     z-index: -1;
@@ -137,14 +138,15 @@ img{
  }   
  h2{
     padding-top: 100px;
-    padding-left: 20px;
+    padding-left: 32px;
+    font-size: $font-la;
  }
  p{
-    font-size: $font-md;
+    font-size: 32px;
     font-family: $font-over;
     font-weight: bold;
     color: #fff;
-    padding-left: 15px;
+    padding-left: 30px;
     padding-bottom: 20px;
 }
 img{
@@ -152,7 +154,7 @@ img{
     height: 520px;
     position: absolute;
     right: 100px;
-    bottom: 32px;
+    bottom: 72px;
  }
 .icon_text{
     font-size: $font-sm;
@@ -161,6 +163,7 @@ img{
 }
 .icon_group{
     display: flex;
+    padding-bottom: 12px;
 }
 
 .feature_wrapper{
@@ -187,7 +190,6 @@ img{
     img{
         width: 95%;
         height: 700px;
-        // position: relative;
     }
 }
 
@@ -216,23 +218,85 @@ img{
     background-image: url(../images/nataliya-smirnova-6Rfsu18_iVg-unsplash.jpg);
     background-size: cover;
     height: 642px;
+    position: relative;
     h3{
         font-size: 45px;
         font-family: 'Abril Fatface', cursive;
         color: #000;
         @include flexLayout;
-        padding: 190px 20px 5px 20px ;
-        // -webkit-text-stroke: 1px #fff;
+        padding: 90px 20px 5px 20px ;
     }
+    .wrap {
+        margin: 2em 0;
+        padding: 0;
+      }
+      
+      .wrap label {
+        display: block;
+        padding : 8px;
+        color: #fff;
+        font-weight: bold;
+        font-family: $font-over;
+        background: #ffd4e2;
+        width: 380px;
+        cursor: pointer;
+        margin-left: 20px;
+      }
+      
+      .wrap input[type="checkbox"] {
+        display: none;
+      }
+      
+      .wrap .content {
+        height: 0;
+        padding: 0;
+        overflow: hidden;
+        margin-bottom: 10px;
+        // border: 1px solid #ccc;
+      }
+      .content p{
+        font-family: $font-over;
+        font-size: $font-sm;
+        width: 380px;
+      }
+      
+      .switch:checked + .content {
+        height: auto;
+        width: 380px;
+        margin-left: 20px;
+        padding: 8px;
+        background: #f9e6dd;
+      }
+      
+
 .qnas_wrapper{
     border: 3px solid #ffd4e2;
     background-color: #fff;
     background-size: contain;
     width: 450px;
-    height: 638px;
+    height: 636px;
+    position: absolute;
+    left: 250px;
 }
-.answer_btn button{
-  text-align: center;
+.answer_btn {
+    text-align: center;
+    cursor: pointer;
+    background-color: #fff;
+    font-size: 20px;
+    font-family: $font-nixie;
+    border: none;
+    border-radius: 8px;
+    padding: 10px;
+    margin-top: 20px;
+    margin-bottom: 100px;
+    margin-left: 140px ;
+    color: #ffd4e2;
+    border: 2px solid #f9e6dd;
+
+    &:hover{
+        background-color: #ffd4e2;
+        color: #fff;
+}
 }
 }
 .contact_form{
@@ -246,20 +310,39 @@ img{
         text-align: left;
         width: 480px;
         height: 50px;
-        border-color: rgb(250, 249, 249);
-        border-radius: 20px;
+        border-color:#f9e6dd;
+        border-radius: 32px;
         margin-top: 40px;
-        margin-left: 50px;
-        margin-bottom: 60px;
+        margin-left: 30px;
+        margin-bottom: 30px;
         font-size: $font-sm;
         font-family:$font-abril;
         padding-left:15px;
     }
     .contact_form2{
         text-align: center;
-        
                 }
+    .input{
+        display: block;
+    }
+    .btn_submit{
+    cursor: pointer;
+    background-color: #fff;
+    font-size: 20px;
+    font-family: $font-nixie;
+    border: none;
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 100px;
+    color: #ffd4e2;
+    border: 2px solid #f9e6dd;
+    &:hover{
+        background-color: #ffd4e2;
+        color: #fff;
+    }
 }
+}
+
 footer{
     .footer_menu {
         background-color: $color-primary;
@@ -272,7 +355,7 @@ footer{
     }
     .fm {
         text-align: center;
-        font-size: 24px;
+        font-size: 18px;
         font-family: $font-over;
         color: #fff;
     }

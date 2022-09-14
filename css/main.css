@@ -14,6 +14,7 @@ body {
   height: 90px;
   position: fixed;
   border-bottom: 4px solid #ffd4e2;
+  z-index: 99;
 }
 
 img {
@@ -76,7 +77,7 @@ img {
   border-radius: 8px;
   padding: 10px;
   margin-left: 110px;
-  color: #8A3398;
+  color: #ffd4e2;
 }
 .top .shop_btn:hover {
   background-color: #ffd4e2;
@@ -123,7 +124,7 @@ img {
   margin-top: 70px;
   margin-left: 60px;
   background-size: contain;
-  height: 600px;
+  height: 690px;
   width: 100%;
   position: relative;
   z-index: -1;
@@ -137,14 +138,15 @@ img {
 }
 .feature h2 {
   padding-top: 100px;
-  padding-left: 20px;
+  padding-left: 32px;
+  font-size: 40px;
 }
 .feature p {
-  font-size: 28px;
+  font-size: 32px;
   font-family: "Overpass", sans-serif;
   font-weight: bold;
   color: #fff;
-  padding-left: 15px;
+  padding-left: 30px;
   padding-bottom: 20px;
 }
 .feature img {
@@ -152,7 +154,7 @@ img {
   height: 520px;
   position: absolute;
   right: 100px;
-  bottom: 32px;
+  bottom: 72px;
 }
 .feature .icon_text {
   font-size: 18px;
@@ -161,6 +163,7 @@ img {
 }
 .feature .icon_group {
   display: flex;
+  padding-bottom: 12px;
 }
 .feature .feature_wrapper {
   display: block;
@@ -207,6 +210,7 @@ img {
   background-image: url(../images/nataliya-smirnova-6Rfsu18_iVg-unsplash.jpg);
   background-size: cover;
   height: 642px;
+  position: relative;
 }
 .Qnas h3 {
   font-size: 45px;
@@ -215,17 +219,71 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 190px 20px 5px 20px;
+  padding: 90px 20px 5px 20px;
+}
+.Qnas .wrap {
+  margin: 2em 0;
+  padding: 0;
+}
+.Qnas .wrap label {
+  display: block;
+  padding: 8px;
+  color: #fff;
+  font-weight: bold;
+  font-family: "Overpass", sans-serif;
+  background: #ffd4e2;
+  width: 380px;
+  cursor: pointer;
+  margin-left: 20px;
+}
+.Qnas .wrap input[type=checkbox] {
+  display: none;
+}
+.Qnas .wrap .content {
+  height: 0;
+  padding: 0;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+.Qnas .content p {
+  font-family: "Overpass", sans-serif;
+  font-size: 18px;
+  width: 380px;
+}
+.Qnas .switch:checked + .content {
+  height: auto;
+  width: 380px;
+  margin-left: 20px;
+  padding: 8px;
+  background: #f9e6dd;
 }
 .Qnas .qnas_wrapper {
   border: 3px solid #ffd4e2;
   background-color: #fff;
   background-size: contain;
   width: 450px;
-  height: 638px;
+  height: 636px;
+  position: absolute;
+  left: 250px;
 }
-.Qnas .answer_btn button {
+.Qnas .answer_btn {
   text-align: center;
+  cursor: pointer;
+  background-color: #fff;
+  font-size: 20px;
+  font-family: "Nixie One", cursive;
+  border: none;
+  border-radius: 8px;
+  padding: 10px;
+  margin-top: 20px;
+  margin-bottom: 100px;
+  margin-left: 140px;
+  color: #ffd4e2;
+  border: 2px solid #f9e6dd;
+}
+.Qnas .answer_btn:hover {
+  background-color: #ffd4e2;
+  color: #fff;
 }
 
 .contact_form h3 {
@@ -238,17 +296,36 @@ img {
   text-align: left;
   width: 480px;
   height: 50px;
-  border-color: rgb(250, 249, 249);
-  border-radius: 20px;
+  border-color: #f9e6dd;
+  border-radius: 32px;
   margin-top: 40px;
-  margin-left: 50px;
-  margin-bottom: 60px;
+  margin-left: 30px;
+  margin-bottom: 30px;
   font-size: 18px;
   font-family: "Abril Fatface", cursive;
   padding-left: 15px;
 }
 .contact_form .contact_form2 {
   text-align: center;
+}
+.contact_form .input {
+  display: block;
+}
+.contact_form .btn_submit {
+  cursor: pointer;
+  background-color: #fff;
+  font-size: 20px;
+  font-family: "Nixie One", cursive;
+  border: none;
+  border-radius: 8px;
+  padding: 10px;
+  margin-bottom: 100px;
+  color: #ffd4e2;
+  border: 2px solid #f9e6dd;
+}
+.contact_form .btn_submit:hover {
+  background-color: #ffd4e2;
+  color: #fff;
 }
 
 footer .footer_menu {
@@ -262,7 +339,7 @@ footer .footer_menu {
 }
 footer .fm {
   text-align: center;
-  font-size: 24px;
+  font-size: 18px;
   font-family: "Overpass", sans-serif;
   color: #fff;
 }
