@@ -51,9 +51,7 @@ img{
     font-size: 60px;
     font-family: $font-shrik;
     color: #fff;
-    display: inline;
-    text-align: left;
-    padding-left: 60px;
+    padding-left: 28px;
  }
  
  .copy{
@@ -95,8 +93,6 @@ img{
 }
 
 .products{
-    h2{
-    }
     .items{
         display: flex;
         justify-content: space-evenly;
@@ -242,18 +238,15 @@ img{
         cursor: pointer;
         margin-left: 20px;
       }
-      
       .wrap input[type="checkbox"] {
         display: none;
       }
-      
       .wrap .content {
         height: 0;
         padding: 0;
         overflow: hidden;
         margin-bottom: 10px;
-        // border: 1px solid #ccc;
-      }
+        }
       .content p{
         font-family: $font-over;
         font-size: $font-sm;

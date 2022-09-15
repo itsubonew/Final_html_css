@@ -1,0 +1,189 @@
+body {
+  min-width: 100% !important;
+}
+
+img {
+  width: 100%;
+}
+
+#photo {
+  display: none;
+}
+
+#header_container {
+  height: 120px;
+}
+
+.header_wrapper img {
+  width: 140px;
+  height: 70px;
+  padding-top: 10px;
+}
+.header_wrapper .header_wrapper {
+  display: flex;
+  align-items: center;
+}
+.header_wrapper .nav_bar {
+  display: inline-block;
+  padding-right: 0;
+}
+.header_wrapper .nav_bar ul {
+  list-style: none;
+  display: block;
+  text-align: left;
+  margin-right: 0;
+}
+.header_wrapper .nav_menu {
+  margin-left: 30px;
+}
+.header_wrapper .nav_menu li {
+  font-size: 16px;
+  padding-top: 5px;
+}
+
+.top {
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 560px;
+}
+.top h1 {
+  font-size: 36px;
+  padding-left: 0;
+}
+.top .main_text {
+  padding-left: 34px;
+}
+
+.products h2 {
+  font-size: 30px;
+  padding-bottom: 10px;
+}
+.products .items {
+  display: block;
+}
+.products .items img {
+  width: 220px;
+  height: 220px;
+  margin-left: 50px;
+}
+
+.feature {
+  background-size: contain;
+  height: 1000px;
+  margin-left: 0;
+}
+.feature h2 {
+  font-size: 30px;
+  padding-left: 12px;
+}
+.feature p {
+  font-size: 24px;
+}
+.feature img {
+  width: 280px;
+  height: 180px;
+  position: absolute;
+  left: 18px;
+}
+.feature .icon_wrapper {
+  margin-left: 30px;
+}
+.feature .icon_group {
+  display: flex;
+}
+
+.size_finder h2 {
+  font-size: 30px;
+}
+.size_finder .size_text {
+  font-size: 20px;
+}
+.size_finder img {
+  width: 100%;
+  height: 350px;
+}
+
+.howTo h2 {
+  font-size: 24px;
+  display: block;
+  padding-left: 15px;
+}
+.howTo .howTo_text {
+  font-size: 18px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.howTo .youtube {
+  width: 180px;
+  height: 120px;
+  margin: 10px 0 50px 70px;
+}
+
+.Qnas {
+  height: 530px;
+}
+.Qnas h3 {
+  font-size: 24px;
+  padding-left: 5px;
+}
+.Qnas .qnas_wrapper {
+  width: 250px;
+  height: 400px;
+  position: absolute;
+  left: 36px;
+}
+.Qnas .wrap label {
+  width: 220px;
+  margin-left: 12px;
+}
+.Qnas .content p {
+  font-size: 18px;
+  flex-wrap: wrap;
+}
+.Qnas .wrap .content {
+  height: 0;
+  padding: 0;
+  margin-bottom: 10px;
+  overflow: auto;
+}
+.Qnas .switch:checked + .content {
+  height: auto;
+  width: 220px;
+  margin-left: 12px;
+  padding: 8px;
+  background: #f9e6dd;
+}
+.Qnas .answer_btn {
+  margin-left: 46px;
+  margin-top: 35px;
+}
+
+.contact_form h3 {
+  font-size: 30px;
+  padding-top: 60px;
+}
+.contact_form .contact_email {
+  text-align: left;
+  width: 280px;
+  height: 34px;
+  margin-left: 10px;
+  margin-top: 20px;
+}
+.contact_form .btn_submit {
+  margin-bottom: 50px;
+}
+
+footer .footer_menu {
+  width: 100%;
+  height: 90px;
+  display: block;
+  justify-content: space-around;
+  list-style: none;
+  padding-top: 10px;
+}
+footer .fm {
+  text-align: center;
+  font-size: 16px;
+}
+
+/*# sourceMappingURL=mobile.css.map */

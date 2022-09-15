@@ -58,9 +58,7 @@ img {
   font-size: 60px;
   font-family: "Shrikhand", cursive;
   color: #fff;
-  display: inline;
-  text-align: left;
-  padding-left: 60px;
+  padding-left: 28px;
 }
 .top .copy {
   color: #fff;
