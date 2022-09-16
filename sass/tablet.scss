@@ -1,0 +1,67 @@
+body{
+    min-width: 100% !important;
+}
+#header_wrapper{
+    height: 30px;
+}
+.top{
+    .main_text{
+     padding-left:120px;
+    }
+}
+.products{
+    .items{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .items img{
+        width: 180px;
+        height: 180px;
+    }
+    .products_wrap p{
+        padding-left: 36px;
+    }
+}
+.feature{
+    height: 610px;
+img{
+left: 430px;
+bottom: 120px;
+width: 310px;
+height: 190px;
+}
+}
+.size_finder{
+    img{
+        height: 630px;
+    }
+}
+.howTo{
+    h2{
+        margin-left:280px;
+    }
+    .howTo_text{
+        padding-left: 240px;
+    }
+    .youtube{
+        width: 240px;
+        height: 220px;
+        margin: 10px 0 50px 70px;
+    }
+}
+.Qnas{
+    height:530px;
+    
+    h3{
+        font-size: 24px;
+        padding-left: 5px;
+    }
+    .qnas_wrapper{
+        width: 250px;
+        height: 400px;
+        position: absolute;
+        left: 128px;
+    }
+}
+
+        
