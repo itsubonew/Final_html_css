@@ -215,7 +215,7 @@ img {
 .products .items img {
   width: 260px;
   height: 280px;
-  margin-top: 60px;
+  margin-top: 104px;
 }
 .products .type {
   text-align: center;
@@ -243,7 +243,7 @@ img {
   height: 60px;
   margin-top: 32px;
   margin-left: 52px;
-  margin-bottom: 32px;
+  margin-bottom: 60px;
   border-radius: 5.5%;
 }
 .products .products_no2 #btn:hover {
@@ -255,6 +255,8 @@ img {
   font-family: "Abril Fatface", cursive;
   padding-top: 18px;
   color: #8A3398;
+  padding-bottom: 20px;
+  font-weight: lighter;
 }
 .products .item_prices {
   font-size: 28px;

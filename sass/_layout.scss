@@ -212,15 +212,14 @@ img{
 
 .products{
     .items img{
-        // display: flex;
         width: 260px;
         height: 280px;
-        // border: 1px solid #ffd4e2;
-        margin-top: 60px;
-        // margin-left: 120px;
-        // box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        margin-top: 104px;
+
     }
-    
+    .img-item{
+
+    }
     
     .type {
        text-align: center;
@@ -231,9 +230,6 @@ img{
         background-color:#ffe4ed;
         height: 40px;
 
-    }
-    .products_wrap{
-        // display: flex;
     }
 
     .products_no2{
@@ -253,7 +249,7 @@ img{
             height: 60px;
             margin-top: 32px;
             margin-left: 52px;
-            margin-bottom: 32px;
+            margin-bottom: 60px;
             border-radius: 5.5%;
 
             &:hover{
@@ -266,6 +262,8 @@ img{
             font-family: $font-abril;
             padding-top: 18px;
             color: #8A3398;
+            padding-bottom: 20px;
+            font-weight: lighter;
         }
         .item_prices {
             font-size: 28px;
