@@ -10,6 +10,8 @@
         <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Limelight&family=Nixie+One&family=Overpass:wght@300&family=Shrikhand&display=swap" rel="stylesheet">
         <link rel="stylesheet" media="screen and (min-width: 320px) and (max-width: 768px )" href="css/mobile.css"> 
         <link rel="stylesheet" media="screen and (min-width: 769px) and (max-width: 1023px)" href="css/tablet.css"> 
+        <script src="https://kit.fontawesome.com/a03803373a.js" crossorigin="anonymous"></script>
+        <script src="index.js" async></script>
 
             <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
             <script type="text/javascript">
@@ -39,6 +41,38 @@
                     <li><a href="#"> How to use it</a></li>
                     <li><a href="#"> FAQ</a></li>
                     <li><a href="#"> Contact</a></li>
+                    <div class="cart-box">
+                        <div class="cart-icon"><i class="fa-solid fa-cart-shopping fa-2x "></i></div>
+                        <div class="whole-cart-window hide">
+                                <h2 class="my-cart">My cart</h2>    
+                            <div class="cart-wrapper">
+                                <!-- <div class="cart-item">
+                                    <img src="./images/meluna_regularCup_purple.png" alt="">
+                                    <div class="item-details">
+                                        <h3 class="item-name">Item Name</h3>                                        <span class="quantity">Quantity1</span>
+                                        <span class="price">Price: $34.00</span>                                   
+                                     </div>
+                                    <div class="cancel"><i class="fa-solid fa-trash-can"></i></div>
+                                </div>
+
+                                <div class="cart-item">
+                                    <img src="./images/meluna_regularCup_purple.png" alt="">
+                                    <div class="item-details">
+                                        <h3 class="item-name">Item Name</h3>
+                                        <span class="quantity">Quantity1</span>
+                                        <span class="price">Price: $34.00</span>                                   
+                                     </div>
+                                    <div class="cancel"><i class="fa-solid fa-trash-can"></i></div>
+                                </div> -->
+            
+                            </div> 
+                            <div class="subtotal">Subtotal: $0.00</div>
+                            <div class="view-cart">View Cart</div>
+                            <div class="checkout">Checkout</div>
+            
+                            </div> 
+                        </div>
+                    </div>        
                 </ul>
             </nav>
             </div>
@@ -60,16 +94,63 @@
         <section class="products">
             <h2 class="menu">Products</h2>
             <div class="items">
-            <div class="products_wrap">   
-            <img src="./images/meluna_short.webp" alt="menstrual cup shorty">
-            <p class="type">Me luna cup shorty</p></div> 
-            <div class="products_wrap"> 
-            <img src="./images/meluna_standard.webp" alt="me luna standard cups">
-            <p class="type">Me luna cup regular fit</p></div>
-            <div class="products_wrap"> 
-            <img src="./images/meluna_accs.jpeg" alt="menstrual cups rainbow colors">
-            <p class="type">Accessories</p></div>
+            <div class="products_wrap">      
+            <p class="type">Me luna cup shorty</p>
+            <div class="products_no2"> 
+             <div data-id = "1" class="card-item">   
+                <img class="img_item" src="./images/meluna_shorty_purple.png" alt="menstrual cup shorty">
+                <p class="item_names">Me luna cup Classic <br/>Purple<br>Size Shorty S</p>
+                <span class="item_prices">$33.20</span>
+                <button data-id="1" id="btn" >Add to cart</button>
+             </div>
+
+            <div data-id = "2" class="card-item">
+            <img class="img_item" src="./images/meluna_short01.png" alt="me luna cup short">
+            <p class="item_names">Me luna cup <br/>Fairy dust<br>Size Shorty S</p>
+            <span class="item_prices">$34.20</span>
+            <button data-id="2" id="btn">Add to cart</button>
             </div>
+        </div>
+            </div> 
+
+            <div class="products_wrap"> 
+            <p class="type">Me luna cup regular fit</p>
+            <div class="products_no2">    
+            <div data-id = "3" class="card-item">
+            <img class="img_item" src="./images/meluna_regularCup_purple.png" alt="me luna standard cup">
+            <p class="item_names">Me luna cup Classic <br/>Purple<br>Size M</p>
+            <span class="item_prices">$34.20</span>
+            <button data-id="3" id="btn">Add to cart</button>
+            </div>
+            
+
+            <div data-id = "4" class="card-item">
+                <img class="img_item" src="./images/meluna_regular01.png" alt="me luna regular cup">
+                <p class="item_names">Me luna cup Classic <br/>Blue-Glittery<br>Size M</p>
+                <span class="item_prices">$34.20</span>
+                <button data-id="4" id="btn">Add to cart</button>
+            </div>
+        </div>
+            </div>
+
+            <div class="products_wrap">
+            <p class="type">Me luna bag</p> 
+            <div class="products_no2"> 
+            <div data-id = "5" class="card-item">
+            <img class="img_item" src="./images/meluna_ogbag.png" alt="organic bag for meluna cup">
+            <p class="item_names">Organic Cotton Bag</p>
+            <span class="item_prices">$7.80</span>
+            <button data-id="5" id="btn">Add to cart</button> 
+            </div>
+            
+            <div data-id = "6" class="card-item">
+            <img class= "img_item" src="./images/meluna_satinBag.png" alt="satin pouch for meluna cup">
+            <p class="item_names">Purple Satin Pouch</p>
+            <span class="item_prices">$8.24</span>
+            <button data-id="6" id="btn">Add to cart</button>
+        </div>
+            </div>
+        </div>
         </section>
 
         <article class="feature">

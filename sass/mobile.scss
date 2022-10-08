@@ -1,5 +1,12 @@
+// @media screen and (max-width: 768px){
+
+
 body{
-    min-width: 100% !important;
+    @media screen and (max-width: 768px){
+
+    
+    }
+    // min-width: 100% !important;
 }
 
 img{
@@ -45,9 +52,13 @@ height: 120px;
     background-size: cover;
     background-repeat: no-repeat;
     height: 560px;
+    
     h1{
         font-size: 36px;
         padding-left: 0;
+    }
+    .copy {
+        font-size: 21px;
     }
     .main_text{
     padding-left: 22px;
@@ -190,3 +201,4 @@ footer{
     }
 }
 
+// }

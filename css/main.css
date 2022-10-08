@@ -7,12 +7,25 @@ body {
   background-color: #fff;
 }
 
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --after-content:"2";
+}
+
 #header_container {
   width: 100%;
   height: 90px;
   background-color: #fff;
   height: 90px;
   position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
   border-bottom: 4px solid #ffd4e2;
   z-index: 99;
 }
@@ -33,19 +46,123 @@ img {
   list-style: none;
   display: flex;
   text-align: center;
-  font-family: "Nixie One", cursive;
-  font-size: 18px;
+  font-family: "Abril Fatface", cursive;
+  font-weight: lighter;
+  font-size: 20px;
 }
 .header_wrapper .nav_bar li {
   padding-right: 32px;
   padding-left: 32px;
 }
 .header_wrapper .nav_menu a {
-  color: #000;
+  color: #CAF0F8;
   text-decoration: none;
 }
 .header_wrapper .nav_menu a:hover {
   color: #8A3398;
+}
+.header_wrapper .cart-box {
+  width: 26% !important;
+  position: absolute;
+  left: 70%;
+  top: 25%;
+  padding: 10px 20px;
+}
+.header_wrapper .cart-wrapper {
+  overflow-y: auto;
+  max-height: 330px;
+  width: 320px;
+}
+.header_wrapper .whole-cart-window {
+  border: solid 1px #ffd4e2;
+  border-top: none;
+  position: fixed;
+  top: 12vh;
+  background-color: #fff;
+  margin-right: 2%;
+}
+.header_wrapper .subtotal {
+  text-align: right;
+  padding: 5%;
+  font-size: 22px;
+}
+.header_wrapper .checkout, .header_wrapper .view-cart {
+  width: 80%;
+  text-align: center;
+  cursor: pointer;
+  background-color: #ffd4e2;
+  font-size: 18px;
+  color: black;
+  margin: 10px auto;
+  padding: 10px 15px;
+  font-family: "Shrikhand", cursive;
+}
+.header_wrapper .view-cart {
+  background-color: #fff;
+  color: #ffd4e2;
+  border: 1px solid gainsboro;
+}
+.header_wrapper .cart-item {
+  display: grid;
+  grid-template-columns: 3fr 6fr 1fr;
+  padding: 5% 2%;
+  border-bottom: solid 1px lightgray;
+}
+.header_wrapper .cart-item h3 {
+  text-align: left;
+  margin-bottom: 5%;
+}
+.header_wrapper .cart-item .cart-icon {
+  margin-left: 100px;
+}
+.header_wrapper .cart-item .item-name {
+  font-size: 18px;
+  font-family: "Abril Fatface", cursive;
+  text-align: center;
+}
+.header_wrapper .cart-item .price {
+  display: block;
+  text-align: right;
+  margin-top: 35%;
+}
+.header_wrapper .cart-item .cancel {
+  text-align: right;
+}
+.header_wrapper .cart-item .item-details p {
+  padding-left: 10%;
+  font-size: 18px;
+  text-align: left;
+}
+.header_wrapper .cart-item .quantity {
+  display: block;
+  margin-top: 5%;
+  font-family: "Overpass", sans-serif;
+}
+.header_wrapper .cart-item img {
+  width: 100%;
+}
+.header_wrapper .item-name, .header_wrapper .price, .header_wrapper .subtotal {
+  font-family: "Overpass", sans-serif;
+}
+.header_wrapper .fa-trash-can {
+  color: #8A3398;
+}
+.header_wrapper .hide {
+  display: none;
+}
+.header_wrapper .non-empty::after {
+  content: var(--after-content);
+  font-size: 20px;
+  width: 25px;
+  height: 25px;
+  display: inline-block;
+  text-align: center;
+  position: relative;
+  top: -20px;
+  right: 10px;
+  background-color: #CAF0F8;
+  color: #8A3398;
+  border-radius: 50%;
 }
 
 .top {
@@ -95,26 +212,55 @@ img {
   top: 162px;
 }
 
-.products .items {
-  display: flex;
-  justify-content: space-evenly;
-}
 .products .items img {
   width: 260px;
   height: 280px;
-  border: 1px solid #ffd4e2;
   margin-top: 60px;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
-.products .products_wrap p {
+.products .type {
   text-align: center;
-  font-family: "Nixie One", cursive;
-  font-size: 20px;
-  padding-top: 25px;
+  font-family: "Limelight", cursive;
+  font-size: 32px;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  background-color: #ffe4ed;
+  height: 40px;
 }
-.products .products_wrap p:hover {
-  color: #ffd4e2;
+.products .products_no2 {
+  margin-left: 120px;
+  display: flex;
+  justify-content: space-evenly;
+}
+.products .products_no2 #btn {
+  display: block;
   cursor: pointer;
+  background-color: #ffd4e2;
+  font-size: 20px;
+  font-family: "Nixie One", cursive;
+  border: none;
+  color: #fff;
+  width: 140px;
+  height: 60px;
+  margin-top: 32px;
+  margin-left: 52px;
+  margin-bottom: 32px;
+  border-radius: 5.5%;
+}
+.products .products_no2 #btn:hover {
+  background-color: #CAF0F8;
+  color: #ffd4e2;
+}
+.products .item_names {
+  font-size: 26px;
+  font-family: "Abril Fatface", cursive;
+  padding-top: 18px;
+  color: #8A3398;
+}
+.products .item_prices {
+  font-size: 28px;
+  text-align: center;
+  padding-left: 80px;
+  padding-top: 30px;
 }
 
 .feature {
